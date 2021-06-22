@@ -1,7 +1,5 @@
 const Portfolio = {
 
-
-
     project:[
     {
         title: `THE POKÉMON DRAFT`,
@@ -14,42 +12,39 @@ const Portfolio = {
     },
 
     {
-        title: `PWA`,
-        image: `
-        https://res.cloudinary.com/www-actionnetwork-com/image/upload/v1624367456/budget-pwa_auqalo.png`,
-        description: `PWA.`,
-        builtwith: `XX`,
-        deployed: `XX`,
-        github: `XX`,
+        title: `BUDGET PWA`,
+        image: `https://res.cloudinary.com/www-actionnetwork-com/image/upload/v1624367456/budget-pwa_auqalo.png`,
+        description: `A PWA Budgeting app with online/offline capabilities.`,
+        builtwith: `MongoDB, Express, Mongoose`,
+        deployed: `https://glacial-mesa-68320.herokuapp.com/`,
+        github: `https://github.com/sarahdurks/budget-repo2`,
       
     },
 
     {
-        title: `Pokemon 1`,
-        image: `
-        
-    https://res.cloudinary.com/www-actionnetwork-com/image/upload/v1624367457/pokemon-one_ntbza4.png`,
-        description: `PWA.`,
-        builtwith: `XX`,
-        deployed: `XX`,
-        github: `XX`,
+        title: `POKEMON GAME`,
+        image: `https://res.cloudinary.com/www-actionnetwork-com/image/upload/v1624367457/pokemon-one_ntbza4.png`,
+        description: `A simple JS game using the PokeAPI`,
+        builtwith: `HTML / CSS / JS / Figma / PokeAPI`,
+        deployed: `https://meganclo.github.io/Pokemon-Bootcamp-Battle/`,
+        github: `https://github.com/sarahdurks/Pokemon-Bootcamp-Battle`,
       
     },
     {
         title: `SCHEDULER`,
         image: `
         https://res.cloudinary.com/www-actionnetwork-com/image/upload/v1624367456/scheduler_dcgb5y.png`,
-        description: `PWA.`,
-        builtwith: `XX`,
-        deployed: `XX`,
-        github: `XX`,
+        description: `A calendar application that allows a user to save events for each hour of the day.`,
+        builtwith: `HTML / CSS / JavaScript / jQuery / Moment.js`,
+        deployed: `https://sarahdurks.github.io/work-scheduler/`,
+        github: `https://github.com/sarahdurks/work-scheduler`,
       
     },
   
     {
         title: `NOTE TAKER`,
         image: `    https://res.cloudinary.com/www-actionnetwork-com/image/upload/v1624367456/notes_druqku.png`,
-        description: `This is a a simple note-taking app using Express, with CRUD operations and user-DOM interaction.`,
+        description: `A note-taking app using Express and CRUD operations.`,
         builtwith: `HTML / CSS / JavaScript / Node / Express`,
         deployed: `https://note-taker-sarah.herokuapp.com/`,
         github: `https://github.com/sarahdurks/express-js-notes`,
@@ -57,9 +52,9 @@ const Portfolio = {
     },
 
     {
-        title: `WEATHER DASH`,
+        title: `WEATHER DASHBOARD`,
         image: `https://res.cloudinary.com/www-actionnetwork-com/image/upload/v1624367456/weather_qvzc6q.png`,
-        description: `A weather dashboard that features dynamically updated HTML and CSS using OpenWeather API data.`,
+        description: `Features dynamically updated HTML & CSS using OpenWeather API data.`,
         builtwith: ` HTML / Bootstrap / CSS, JavaScript / Moment.js`,
         deployed: `https://sarahdurks.github.io/weather-new`,
         github: `https://github.com/sarahdurks/weather-new`,
