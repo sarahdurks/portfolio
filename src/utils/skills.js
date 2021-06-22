@@ -10,7 +10,7 @@ const Skills = {
     {
         id: 2,
         type: `Back End`,
-        skills: `Node.js, JavaScript, Express.js, Inquirer, SQL, NoSQL, MERN`
+        skills: `Node.js, JavaScript, Express.js, SQL, NoSQL, MERN`
     }
 ]
 }

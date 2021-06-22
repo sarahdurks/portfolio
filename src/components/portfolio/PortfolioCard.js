@@ -1,9 +1,5 @@
 
 
-https://mui-treasury.com/components/card/
-background-image: url("https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80");
-
-
 import React from 'react';
 import cx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
@@ -14,6 +10,7 @@ import TextInfoContent from '@mui-treasury/components/content/textInfo';
 import { useFourThreeCardMediaStyles } from '@mui-treasury/styles/cardMedia/fourThree';
 import { useN04TextInfoContentStyles } from '@mui-treasury/styles/textInfoContent/n04';
 import { useOverShadowStyles } from '@mui-treasury/styles/shadow/over';
+import Portfolio from '../../utils/portfolio';
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -56,3 +53,14 @@ export const MusicCardDemo = React.memo(function MusicCard() {
 export default MusicCardDemo
 
 //https://mui-treasury.com/components/card/
+
+
+Portfolio.title
+Portfolio.image
+Portfolio.description
+Portfolio.builtwith
+Portfolio.github
+
+
+https://mui-treasury.com/components/card/
+background-image: url("https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80");
