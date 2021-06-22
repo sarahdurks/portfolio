@@ -11,6 +11,8 @@ import { useFourThreeCardMediaStyles } from '@mui-treasury/styles/cardMedia/four
 import { useN04TextInfoContentStyles } from '@mui-treasury/styles/textInfoContent/n04';
 import { useOverShadowStyles } from '@mui-treasury/styles/shadow/over';
 import Portfolio from '../../utils/portfolio';
+import { GitHub, Language } from '@material-ui/icons';
+import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -34,33 +36,36 @@ export const MusicCardDemo = React.memo(function MusicCard() {
       <CardMedia
         className={cx(styles.media, mediaStyles.root)}
         image={
-          'https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80'
-        }
+          Portfolio.image}
+        
       />
       <CardContent>
         <TextInfoContent
           classes={textCardContentStyles}
-          overline={'Kesha'}
-          heading={'Inner Varnika'}
-          body={
-            'That year, collection of songs, review melodies, memories full, this is a long and warm journey'
-          }
+          overline={Portfolio.builtwith}
+          heading={Portfolio.title}
+          body={Portfolio.description}
         />
+
       </CardContent>
+      <Grid>
+      <Button 
+              href={Portfolio.github}
+              target="_blank"
+              className={classes.icons}>
+              <GitHub className={classes.icons} />
+            
+          </Button>
+          <Button 
+              href={Portfolio.deployed}
+              target="_blank"
+              className={classes.icons}>
+              <Language className={classes.icons} />
+            
+          </Button>
+          </Grid>
     </Card>
   );
 });
 export default MusicCardDemo
 
-//https://mui-treasury.com/components/card/
-
-
-Portfolio.title
-Portfolio.image
-Portfolio.description
-Portfolio.builtwith
-Portfolio.github
-
-
-https://mui-treasury.com/components/card/
-background-image: url("https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80");
