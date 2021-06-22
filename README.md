@@ -50,7 +50,7 @@
 
  
 ### Resources 🤝
-- [Material UI](https://material-ui.com/api/scoped-css-baseline/
+- [Material UI](https://material-ui.com/)
 - [Bootcamp Materials](https://courses.bootcampspot.com/courses/518/pages/20-dot-5-4-manage-the-modals-state?module_item_id=137345)
 - [Programming with Mosh Guide for React](https://programmingwithmosh.com/javascript/importing-css-files-in-react/)
 - [StackOverflow Threads](https://stackoverflow.com/questions/54045869/npm-run-cannot-find-module-sass-after-repeated-reinstall-attempts) 
