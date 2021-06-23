@@ -11,12 +11,6 @@ const useStyles = makeStyles(() => ({
   footerContainer: {
       display: 'flex',
       position: "fixed",
-      background: '#350D4B',
-      bottom: "0",
-      left: "0",
-      width: "100%",
-      height: "10vh",
-      zIndex: 1
   },
   icons: {
       color: "#B99BC9",
@@ -61,7 +55,7 @@ const Footer = () => {
                 SARAHDURKIN.COM
               </span>
           </Button>
-          <Button // should this not be a button by best practice?
+          <Button // should this not be a button by best practice bc not clicckable?
               className={classes.icons}>
                      <span style={{ margin: "2vw",  fontSize: "1rem" }}>
                 2021

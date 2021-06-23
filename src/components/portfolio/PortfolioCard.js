@@ -5,6 +5,7 @@ import cx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
+import Button from '@material-ui/core/Button';
 import CardContent from '@material-ui/core/CardContent';
 import TextInfoContent from '@mui-treasury/components/content/textInfo';
 import { useFourThreeCardMediaStyles } from '@mui-treasury/styles/cardMedia/fourThree';
@@ -24,9 +25,13 @@ const useStyles = makeStyles(() => ({
   media: {
     borderRadius: 6,
   },
-}));
+  icons: {
+    size: 1
 
-export const MusicCardDemo = React.memo(function MusicCard() {
+  }
+}));
+//
+export const PortfolioCard = React.memo(function MusicCard() {
   const styles = useStyles();
   const mediaStyles = useFourThreeCardMediaStyles();
   const textCardContentStyles = useN04TextInfoContentStyles();
@@ -52,20 +57,21 @@ export const MusicCardDemo = React.memo(function MusicCard() {
       <Button 
               href={Portfolio.github}
               target="_blank"
-              className={classes.icons}>
-              <GitHub className={classes.icons} />
+              className={styles.icons}>
             
+              <GitHub />
+         
           </Button>
           <Button 
               href={Portfolio.deployed}
               target="_blank"
-              className={classes.icons}>
-              <Language className={classes.icons} />
+              className={styles.icons}>
+              <Language className={styles.icons} />
             
           </Button>
           </Grid>
     </Card>
   );
 });
-export default MusicCardDemo
+export default PortfolioCard
 
