@@ -51,7 +51,7 @@ const PortfolioCard = React.memo(function MusicCard() {
           classes={textCardContentStyles}
           overline={Work.lang}
           heading={Work.title}
-          body={Work.details}
+          body={Work.detail}
         />
 
       </CardContent>
@@ -69,7 +69,6 @@ const PortfolioCard = React.memo(function MusicCard() {
               target="_blank"
               className={styles.icons}>
               <Language className={styles.icons} />
-            
           </Button>
           </Grid>
     </Card>
