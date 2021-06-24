@@ -9,6 +9,7 @@ import AppBar from "@material-ui/core/AppBar";
 import IconButton from "@material-ui/core/IconButton";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
+import BackspaceIcon from '@material-ui/icons/Backspace';
 
 const useStyles = makeStyles(() => ({
     topNav: {
@@ -37,8 +38,7 @@ const Navigation = () => {
                     <Toolbar>
                         <Grid container justify="right">
                             <IconButton onClick={() => setOpen(true)}>
-
-
+                           <BackspaceIcon >  </BackspaceIcon>
                             </IconButton>
                         </Grid>
                     </Toolbar>

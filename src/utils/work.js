@@ -1,4 +1,4 @@
-const Portfolio = {
+const Work= {
 
     project:[
     {
@@ -65,4 +65,4 @@ const Portfolio = {
 ]}
 
 
-export default Portfolio
+export default Work

@@ -31,7 +31,7 @@ const useStyles = makeStyles(() => ({
   }
 }));
 //
-export const PortfolioCard = React.memo(function MusicCard() {
+const PortfolioCard = React.memo(function MusicCard() {
   const styles = useStyles();
   const mediaStyles = useFourThreeCardMediaStyles();
   const textCardContentStyles = useN04TextInfoContentStyles();

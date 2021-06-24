@@ -1,22 +1,92 @@
 
 
-import React from 'react';
+import React, { useState }  from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import TextField from '@material-ui/core/TextField';
 import Grid from '@material-ui/core/Grid';
-import {AccountCircle, ThumbsUpAltIcon } from '@material-ui/icons';
+import {AccountCircle } from '@material-ui/icons';
 import emailjs from 'emailjs-com';
-import ContactMsg from './ContactMsg';
-
+import Message from './Message';
+import Box from "@material-ui/core/Box";
+import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles((theme) => ({
-    container: {
-        width:  `100vw`,
-        height: `100vh`,
-    }
-}))
+  contactContainer: {
+      display: 'flex',
+      background: "black",
+      height: "100vh",
+      justifyContent: "center",
+  },
+  heading: {
+      color: "white",
+      fontFamily: "Roboto",
+      fontWeight: 600,
+      textAlign: "center",
+      marginBottom: "1rem",
+      fontSize: '1.8rem',
+      '@media (max-width:600px)': {
+          fontSize: '1.3rem',
+      },
+  },
+  heading2: {
+      color: "#DBC8FF",
+      textAlign: "center",
+      lineHeight: 1.15,
+      fontWeight: 300,
+      
+      fontFamily: "Roboto",
+      marginBottom: "1rem",
+      display: 'flex',
+      alignItems: "baseline",
+      flexWrap: 'wrap',
+      '@media (max-width:600px)': {
+          fontSize: '1.1rem',
+      },
+  },
+  btn: {
+      color: "white",
+      fontSize: '1rem',
+      fontFamily: "Roboto",
+      fontWeight: 300
 
+  },
+  icon: {
+      margin: 0,
+      paddingBottom: 5,
+      alignSelf: 'baseline',
+  },
+  form: {
+      paddingTop: '15vh',
+      alignSelf: 'baseline',
+      maxWidth: 620,
+      '@media (max-width:600px)': {
+          width: 300,
+          marginTop: '2.5rem',
+          padding: 4,
+      },
+
+      '@media (min-width:600px)': {
+          paddingTop: '15vh',
+          position: "absolute",
+          maxWidth: 650,
+      },
+  },
+  input: {
+      color: "pink",
+      
+      },
+
+  button: {
+      marginTop: "1.5rem",
+      color: "#DBC8FF",
+      border: 'white'
+  },
+  field: {
+      margin: "1.1rem 0rem",
+  },
+
+}));
 
     const Contact = () => {
         const [open, setOpen] = useState(false);
@@ -82,7 +152,7 @@ const useStyles = makeStyles((theme) => ({
         />
       </Grid>
       <Grid>
-        <InputField
+        <TextField
           fullWidth={true}
           label="Send me a message!"
           name="message"
@@ -95,7 +165,6 @@ const useStyles = makeStyles((theme) => ({
       <Grid>
         <Button
           variant="outlined"
-          endIcon={<ThumbUpAltIcon />}
           type="submit"
           className={classes.button}
         >

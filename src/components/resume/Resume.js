@@ -19,7 +19,6 @@ h2: {
 )
 const Resume = () => {
     const classes = useStyles();
-    const mySkillset = Skills.skills
 
     return ( 
         <div className={classes.root}>

@@ -2,24 +2,25 @@ import React from 'react';
 import PortfolioCard from './PortfolioCard';
 import Typography from '@material-ui/core/Typography';
 import Work from '../../utils/work';
-const useStyles = makeStyles({
-    root: {
-        flexGrow: 1
-    },
+import { makeStyles } from '@material-ui/core/styles';
+
+
+const useStyles = makeStyles(() => ({
     heading: {
-        color: '#'
+        font:'Poppins',
+        fontSize: '1rem'
     }
-});
+}));
 
 
 const Portfolio = () => {
+
     const classes = useStyles();
     const allProjects = Work.project
 
     return (
         <div className={classes.root}>
-
-<Typography className={classes.heading} component="h1">Portfolio</Typography>
+            <Typography className={classes.heading} component="h1">Portfolio</Typography>
 
             {allProjects.map(project => {
                     return (
@@ -38,6 +39,6 @@ const Portfolio = () => {
         </div>
 
 )
-}
+};
 
 export default Portfolio
