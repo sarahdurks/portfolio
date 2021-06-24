@@ -58,37 +58,36 @@ const useStyles = makeStyles((theme) => ({
    
 
       alignSelf: 'center',
-      color: `pink`
+      color: `black`
   },
   form: {
       paddingTop: '15vh',
       marginTop: `2vh`,
       alignSelf: `center`,
-      border: `pink`,
       paddingBottom: `3rem`,
-      color: `pink`,
+      color: `black`,
       maxWidth: 620,
       '@media (max-width:600px)': {
           width: 320,
-          marginTop: '30vh',
-          padding: 1,
+          marginTop: '10vh'
+
       },
 
       '@media (min-width:600px)': {
-          paddingTop: '20vh',
+          paddingTop: '10vh',
           position: "absolute",
           maxWidth: 650,
       },
   },
   input: {
-      color: "white",
+      color: "black",
       border: `white`,
       paddingBottom: `3rem`
       
       },
   field: {
-
-      color: `white`,
+    fontFamily: `Poppins`,
+      color: `black`,
       paddingBottom: `3rem`,
       marginBottom: `6rem`,
       marginTop: `6rem`,
@@ -100,7 +99,15 @@ const useStyles = makeStyles((theme) => ({
   },
   formtext: 
   {
-    color: `white`
+    color: `black`,
+    fontFamily: `Poppins`,
+  },
+  head: 
+  {
+    color: `black`,
+    fontFamily: `Poppins`,
+    fontWeight: `900`,
+    fontSize: `2rem`
   }
 
 }));
@@ -142,7 +149,7 @@ const useStyles = makeStyles((theme) => ({
     <Box component="form" className={classes.form} onSubmit={sendEmail}>
       <Grid>
 
-    <Typography>Get in touch</Typography>
+    <Typography className={classes.head}>GET IN TOUCH</Typography>
         <TextField
           className={classes.margin}
           id="name"

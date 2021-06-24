@@ -20,7 +20,7 @@ const useStyles = makeStyles(() => ({
     },
   },
   icons: {
-    color: "#CE375C",
+    color: "#black",
     fontSize: '1.5rem',
     fontWeight: '500',
     fontFamily: 'Poppins'

@@ -4,17 +4,16 @@ import Typography from '@material-ui/core/Typography';
 import Work from '../../utils/work';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-
+import HorizontalScroller from 'react-horizontal-scroll-container';
 const useStyles = makeStyles(() => ({
     root: {
-    backgroundColor: `purple`,
     background: `fixed`,
     height: `100%`,
     width: `100vw`
 },
     view: {
-        height: `100vh`,
-        width: `60vw`,
+        height: `80vh`,
+        width: `80vw`,
         marginTop: `5vh`,
         display: `flex`,
         flexwrap: `wrap`,
@@ -24,7 +23,7 @@ const useStyles = makeStyles(() => ({
     heading: {
         fontFamily:'Poppins',
         fontSize: '3rem',
-        color: `white`,
+        color: `black`,
         marginTop: `10vh`,
         justifyContent: `center`
     },
@@ -49,7 +48,9 @@ const Portfolio = () => {
             {allProjects.map(project => {
                     return (
                         <Grid>
+                             <HorizontalScroller>
                             <PortfolioCard className={classes.card}
+                             key={project.id}
                                 image={project.image}
                                 title={project.title}
                                 description={project.detail}
@@ -57,6 +58,7 @@ const Portfolio = () => {
                                 live={project.live}
                                 github={project.github}
                             />
+                            </HorizontalScroller>
                         </Grid>
                     )
                 })}

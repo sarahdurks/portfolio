@@ -17,7 +17,7 @@ const useStyles = makeStyles(() => ({
         textAlign: 'left',
         fontFamily: 'Poppins',
         weight: `800`,
-        background: "purple",
+        background: "orange",
         height: "100%",
         padding: '2rem',
     },
@@ -30,7 +30,7 @@ const useStyles = makeStyles(() => ({
     listItem: {
         color: "white",
         "&:hover": {
-            color: "#D4BFF9"
+            color: "black"
         },
         marginTop: `2rem`,
         fontSize: `3rem`,
@@ -42,7 +42,8 @@ const useStyles = makeStyles(() => ({
         fontFamily: 'Poppins',
         marginTop: `1rem`,
         marginBottom: `1rem`,
-        color: `white`,
+        color: `black`,
+        weight: `extrabold`,
         justifyContent: `center`
     },
     nowrap: {
