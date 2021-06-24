@@ -12,7 +12,8 @@ const useStyles = makeStyles((theme) => ({
         background: 'black',
         width: '100%',
         height: '100vh',
-        justifyContent: `center`
+        justifyContent: `center`,
+        font: `Poppins`,
     },
 
     box: {
@@ -21,13 +22,22 @@ const useStyles = makeStyles((theme) => ({
     },
     h1: {
         font: `Poppins`,
-        color: `white`
+        color: `#B99BC9`,
+        fontsize: `5rem`
+    },
+    text: {
+        font: `Roboto`,
+        color: `white`,
+        fontsize: `1rem`
     },
     avatar: {
         width: theme.spacing(50),
         height: theme.spacing(50),
         margin: theme.spacing(2),
-       
+        '@media (max-width:600px)': {
+            width: theme.spacing(20),
+        height: theme.spacing(20)
+        },
     }
 
 }))
@@ -48,12 +58,12 @@ const Home = () => {
                 </Grid> 
    
                 <Grid container justify="center">
-            <Typography className={home.h1}>
+            <Typography className={home.text}>
                     {about.intro}
                 </Typography>
                 </Grid> 
                 <Grid container justify="center">
-                <Typography className={home.h1}>       {about.bio}     </Typography>
+                <Typography className={home.text}>       {about.bio}     </Typography>
                 <Grid container justify="center">
             <Avatar className={home.avatar} src='https://res.cloudinary.com/www-actionnetwork-com/image/upload/v1623987783/77648727_yfozng.jpg' alt="Sarah headshot" />
             </Grid>

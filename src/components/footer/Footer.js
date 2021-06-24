@@ -8,56 +8,54 @@ import { LinkedIn, GitHub, Language } from '@material-ui/icons';
 import contact from '../../utils/contact';
 
 const useStyles = makeStyles(() => ({
-  footerContainer: {
-      display: 'flex',
-      position: "fixed",
+  footer: {
+    display: 'flex',
+    position: "fixed",
+    zindex: '1',
+    bottom: '0',
+    '@media (max-width:600px)': {
+      fontSize: '.8rem',
+    },
   },
   icons: {
-      color: "#B99BC9",
-      fontSize: '2rem',
-      fontWeight: '700',
-      fontFamily: 'Poppins'
+    color: "#B99BC9",
+    fontSize: '2rem',
+    fontWeight: '500',
+    fontFamily: 'Poppins'
   },
- 
+
 }));
 const Footer = () => {
   const classes = useStyles();
 
   return (
-      <div className={classes.footerContainer}>
-           <Grid container justify="center">
-          <Button // on LinkedIn
-              href={contact.linkedin}
-              target="_blank"
-              className={classes.icons}>
-              <LinkedIn className={classes.icons} />
-              <span style={{ margin: "5px", fontSize: "1rem" }}>
-                LINKEDIN
-              </span>
-          </Button>
- 
-          <Button 
-              href={contact.github}
-              target="_blank" // on Github
-              className={classes.icons}>
-              <GitHub className={classes.icons} />
-              <span style={{ marginLeft: "2vw", fontSize: "1rem" }}>
-                GITHUB
-              </span>
-          </Button>
-          
-          <Button // on Web
-              href={contact.mysite}
-              target="_blank"
-              className={classes.icons}>
-              <Language className={classes.icons} />
-              <span style={{ marginLeft: "2vw", fontSize: "1rem" }}>
-                SARAHDURKIN.COM
-              </span>
-          </Button>
-          
-          </Grid>
-      </div>
+    <div className={classes.footer}>
+      <Grid container justify="center">
+        <Button // on LinkedIn
+          href={contact.linkedin}
+          target="_blank"
+          className={classes.icons}>
+          <LinkedIn className={classes.icons} />
+        </Button>
+
+        <Button
+          href={contact.github}
+          target="_blank" // on Github
+          className={classes.icons}>
+          <GitHub className={classes.icons} />
+        </Button>
+
+        <Button // on Web
+          href={contact.mysite}
+          target="_blank"
+          className={classes.icons}>
+          <Language className={classes.icons} />
+          <span style={{ marginLeft: ".5vw", fontSize: "1rem" }}>
+            sarahdurkin.com
+          </span>
+        </Button>
+      </Grid>
+    </div>
   );
 };
 
