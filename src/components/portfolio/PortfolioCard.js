@@ -11,7 +11,7 @@ import TextInfoContent from '@mui-treasury/components/content/textInfo';
 import { useFourThreeCardMediaStyles } from '@mui-treasury/styles/cardMedia/fourThree';
 import { useN04TextInfoContentStyles } from '@mui-treasury/styles/textInfoContent/n04';
 import { useOverShadowStyles } from '@mui-treasury/styles/shadow/over';
-import Portfolio from '../../utils/portfolio';
+import Portfolio from '../../utils/work';
 import { GitHub, Language } from '@material-ui/icons';
 import Grid from '@material-ui/core/Grid';
 

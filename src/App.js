@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Navbar from './components/navbar/Navbar';
+import Navigation from './components/navbar/Navigation';
 import About from './components/home/Home';
 import Portfolio from './components/portfolio/Portfolio';
 import Resume from './components/resume/Resume';
@@ -13,7 +13,7 @@ function App() {
 
     <React.Fragment>
 
-      <Navbar />
+      <Navigation />
       <Router>
         <Switch>
         <Route path='/' component={About} exact /> 

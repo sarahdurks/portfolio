@@ -1,7 +1,7 @@
 import React from 'react';
 import PortfolioCard from './PortfolioCard';
 import Typography from '@material-ui/core/Typography';
-import Portfolio from '../../utils/portfolio';
+import Work from '../../utils/work';
 const useStyles = makeStyles({
     root: {
         flexGrow: 1
@@ -14,7 +14,7 @@ const useStyles = makeStyles({
 
 const Portfolio = () => {
     const classes = useStyles();
-    const allProjects = Portfolio.project
+    const allProjects = Work.project
 
     return (
         <div className={classes.root}>
@@ -26,9 +26,9 @@ const Portfolio = () => {
                             <PortfolioCard
                                 image={project.image}
                                 title={project.title}
-                                description={project.description}
-                                builtwith={project.builtwith}
-                                deployed={project.deployed}
+                                description={project.detail}
+                                lang={project.lang}
+                                live={project.live}
                                 github={project.github}
                             />
                         

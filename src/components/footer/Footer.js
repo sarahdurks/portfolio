@@ -4,7 +4,7 @@ import React from 'react';
 import makeStyles from '@material-ui/core/styles/makeStyles';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
-import { LinkedIn, GitHub, Language, FavoriteBorderIcon } from '@material-ui/icons';
+import { LinkedIn, GitHub, Language } from '@material-ui/icons';
 import contact from '../../utils/contact';
 
 const useStyles = makeStyles(() => ({
@@ -55,13 +55,7 @@ const Footer = () => {
                 SARAHDURKIN.COM
               </span>
           </Button>
-          <Button // should this not be a button by best practice bc not clicckable?
-              className={classes.icons}>
-                     <span style={{ margin: "2vw",  fontSize: "1rem" }}>
-                2021
-              </span>
-              <FavoriteBorderIcon  style={{ color:"#B99BC9"}} className={classes.icons} />
-          </Button>
+          
           </Grid>
       </div>
   );
