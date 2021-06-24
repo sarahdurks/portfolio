@@ -22,7 +22,8 @@ const useStyles = makeStyles(() => ({
     margin: '2rem',
     borderRadius: 15,
     padding: 15,
-    fontFamily: `Poppins`
+    fontFamily: `Poppins`,
+    color: `pink`
   
   },
   media: {

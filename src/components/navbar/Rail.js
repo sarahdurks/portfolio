@@ -7,9 +7,9 @@ import Box from "@material-ui/core/Box";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
-
+import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
-
+import Grid from "@material-ui/core/Grid";
 const useStyles = makeStyles(() => ({
 
     menuRail: {
@@ -38,11 +38,24 @@ const useStyles = makeStyles(() => ({
         marginBottom: `2rem`
     },
     railname: {
-        fontSize: `2rem`,
+        fontSize: `1.5rem`,
         fontFamily: 'Poppins',
         marginTop: `1rem`,
         marginBottom: `1rem`,
-        color: `white`
+        color: `white`,
+        justifyContent: `center`
+    },
+    nowrap: {
+        width: 300
+    },
+    avatar: {
+        width: `5rem`,
+        height: `5rem`,
+        justifyContent: `center`,
+        '@media (max-width:600px)': {
+        width: `60vw`,
+        height: `30vh`
+        }
     }
 }));
 
@@ -51,9 +64,9 @@ const Rail = ({ navigationLinks }) => {
 
     return (
         <Box className={classes.menuRail} component="div">
-              <Divider />
-              <Typography className={classes.railname}>SARAH DURKIN</Typography>
-            <Divider />
+        <Divider />      <Divider /><Grid justify="center">
+              <Typography className={classes.railname}>SARAH DURKIN<Avatar className="avatar" src='https://res.cloudinary.com/www-actionnetwork-com/image/upload/v1624556702/lion_kk6kje.png' alt="Sarah headshot" /></Typography>
+              </Grid> <Divider /><Divider />
             <List>
                 {navigationLinks.map((item) => (
                     <ListItem

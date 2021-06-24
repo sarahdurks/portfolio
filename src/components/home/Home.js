@@ -25,27 +25,28 @@ const useStyles = makeStyles((theme) => ({
 
         
     },
-    h1: { marginTop: `20vh`,
+    nameclass: { marginTop: `10vh`,
         fontFamily: `Poppins`,
         color: `#5bb381`,
-        size: `3rem`,
+        fontSize: `2rem`,
         weight: 900
     },
     text: {
-        font: `Roboto`,
-        marginTop: `5vh`,
+        font: `Poppins`,
+        marginTop: `1vh`,
         color: `white`,
         textAlign: `center`,
-        fontsize: `.8rem`
+        fontsize: `.8rem`,
+        maxWidth: `60vw`
        
     },
     avatar: {
         width: `20rem`,
         height: `20rem`,
-        margintop: `10px`,
+        margintop: `5px`,
         '@media (max-width:600px)': {
-        width: `60vw`,
-        height: `30vh`
+        width: `10rem`,
+        height: `10rem`
         },
     }
 
@@ -59,7 +60,7 @@ const Home = () => {
         <div className={home.root} justify="center" >
             <Grid container justify="center" className={home.box}>
             <Grid container justify="center">
-            <Typography className={home.h1} component="h1">
+            <Typography className={home.nameclass} >
                     {about.name}
                 </Typography>
                 </Grid> 

@@ -21,9 +21,8 @@ const useStyles = makeStyles(() => ({
 
         margin: 0,
         position: `fixed`,
-        width: '100%',
+        width: '100vw',
         height: "10vh",
-
         backgroundColor: `orange`,
         fontFamily: `Poppins`,
         zindex: '1',
@@ -31,8 +30,16 @@ const useStyles = makeStyles(() => ({
     },
     opener: {
         fontSize: `3.5rem`,
+    },
+    avatar: {
+        width: `5rem`,
+        height: `5rem`,
+        margintop: `2px`,
+        '@media (max-width:600px)': {
+        width: `60vw`,
+        height: `30vh`
+        }
     }
- 
 }));
 const Navigation = () => {
 

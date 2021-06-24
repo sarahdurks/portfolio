@@ -13,10 +13,10 @@ import Button from '@material-ui/core/Button';
 import Typography from "@material-ui/core/Typography";
 const useStyles = makeStyles((theme) => ({
 
-  contactContainer: {
+  contact: {
       display: 'flex',
       height: "100vh",
-      background: '#4A154B',
+
       justifyContent: "center",
   },
   heading: {
@@ -32,43 +32,46 @@ const useStyles = makeStyles((theme) => ({
       },
   },
   heading2: {
-      color: "#DBC8FF",
+      color: `white`,
       textAlign: "center",
       lineHeight: 1.15,
       fontWeight: 300,
-      
-      fontFamily: "Roboto",
+      margin: `2vh`,
+      fontSize: `1.5rem`,
+      fontFamily: "Poppins",
       marginBottom: "1rem",
       display: 'flex',
       alignItems: "baseline",
-      flexWrap: 'wrap',
-      '@media (max-width:600px)': {
-          fontSize: '1.1rem',
-      },
+      flexWrap: 'wrap'
   },
   button: {
       color: "white",
       background: `orange`,
       fontSize: '1.5rem',
+      margin: `2vh`,
       fontFamily: "Poppins",
       fontWeight: 400,
 
 
   },
   icon: {
-      margin: 0,
-      paddingBottom: 5,
-      alignSelf: 'baseline',
+   
+
+      alignSelf: 'center',
+      color: `pink`
   },
   form: {
       paddingTop: '15vh',
-      alignSelf: 'baseline',
-      border: `white`,
+      marginTop: `2vh`,
+      alignSelf: `center`,
+      border: `pink`,
+      paddingBottom: `3rem`,
+      color: `pink`,
       maxWidth: 620,
       '@media (max-width:600px)': {
           width: 320,
           marginTop: '30vh',
-          padding: 4,
+          padding: 1,
       },
 
       '@media (min-width:600px)': {
@@ -78,11 +81,26 @@ const useStyles = makeStyles((theme) => ({
       },
   },
   input: {
-      color: "pink"
+      color: "white",
+      border: `white`,
+      paddingBottom: `3rem`
       
       },
   field: {
-      margin: "1.1rem 0rem"
+
+      color: `white`,
+      paddingBottom: `3rem`,
+      marginBottom: `6rem`,
+      marginTop: `6rem`,
+
+  },
+  margin: {
+    color: `white`,
+    marginBottom: `2rem`,
+  },
+  formtext: 
+  {
+    color: `white`
   }
 
 }));
@@ -108,7 +126,7 @@ const useStyles = makeStyles((theme) => ({
                         setSeverity('warning')
                     }
                 }, (error) => {
-                    console.log(error);
+             
                     setOpen(true)
                     setAlertMsg(error.text);
                     setSeverity('error')
@@ -119,7 +137,7 @@ const useStyles = makeStyles((theme) => ({
         return (
 
             
-        <Box component="div" className={classes.contactContainer}>
+        <Box component="div" className={classes.contact}>
   <Grid container justify="center">
     <Box component="form" className={classes.form} onSubmit={sendEmail}>
       <Grid>
@@ -131,8 +149,8 @@ const useStyles = makeStyles((theme) => ({
           label="Name"
           InputProps={{
             startAdornment: (
-              <InputAdornment position="start">
-                <AccountCircle />
+              <InputAdornment  position="start">
+                <AccountCircle className={classes.icon}/>
               </InputAdornment>
             ),
           }}
@@ -145,15 +163,15 @@ const useStyles = makeStyles((theme) => ({
           label="Email"
           InputProps={{
             startAdornment: (
-              <InputAdornment position="start">
-                <AccountCircle />
+              <InputAdornment  position="start">
+                <AccountCircle className={classes.icon}/>
               </InputAdornment>
             ),
           }}
         />
       </Grid>
       <Grid>
-        <TextField
+        <TextField className="formtext"
           fullWidth={true}
           label="Send me a message!"
           name="message"

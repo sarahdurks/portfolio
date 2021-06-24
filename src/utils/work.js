@@ -33,10 +33,9 @@ const Work = {
     },
     {id: `4`,
         title: `SCHEDULER`,
-        image: `
-        https://res.cloudinary.com/www-actionnetwork-com/image/upload/v1624367456/scheduler_dcgb5y.png`,
+        image: `https://res.cloudinary.com/www-actionnetwork-com/image/upload/v1624367456/scheduler_dcgb5y.png`,
         detail: `A calendar application that allows a user to save events for each hour of the day.`,
-        lang: `JavaScript, Query, Moment.js`,
+        lang: `JavaScript, CSS, jQuery, Moment.js`,
         live: `https://sarahdurks.github.io/work-scheduler/`,
         github: `https://github.com/sarahdurks/work-scheduler`,
       
