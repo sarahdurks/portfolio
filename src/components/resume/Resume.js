@@ -27,7 +27,8 @@ skillbox: {
    
     marginTop: `15vh`,
     marginBottom: `15vh`,
-
+    marginRight: `5vw`,
+    marginLeft: `5vw`,
     justifyContent: `center`
 },
 h2:

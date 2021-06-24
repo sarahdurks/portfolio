@@ -17,20 +17,28 @@ import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles(() => ({
   root: {
-    maxWidth: 343,
-    margin: 'auto',
-    borderRadius: 12,
-    padding: 12,
-    fontFamily: ``
+    width: 300,
+    height: 500,
+    margin: '2rem',
+    borderRadius: 15,
+    padding: 15,
+    fontFamily: `Poppins`
+  
   },
   media: {
     borderRadius: 6,
-    height: '375'
+   
   },
   icons: {
-    size: 1
+    size: 1,
+    
+    
 
   },
+  buttoncard:
+
+  { justifyItems: `flexend`},
+    
   image:
   {
     height: `20px`
@@ -58,7 +66,7 @@ const PortfolioCard =({ image, title, details, lang, live, github }) => {
         />
 
       </CardContent>
-      <Grid>
+      <Grid className="buttoncard">
       <Button 
               href={github}
               target="_blank"

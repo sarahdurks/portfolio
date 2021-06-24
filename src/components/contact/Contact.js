@@ -10,8 +10,9 @@ import emailjs from 'emailjs-com';
 import Message from './Message';
 import Box from "@material-ui/core/Box";
 import Button from '@material-ui/core/Button';
-
+import Typography from "@material-ui/core/Typography";
 const useStyles = makeStyles((theme) => ({
+
   contactContainer: {
       display: 'flex',
       height: "100vh",
@@ -19,8 +20,9 @@ const useStyles = makeStyles((theme) => ({
       justifyContent: "center",
   },
   heading: {
+  marginTop: '15vh',
       color: "white",
-      fontFamily: "Roboto",
+      fontFamily: "Poppins",
       fontWeight: 600,
       textAlign: "center",
       marginBottom: "1rem",
@@ -44,11 +46,13 @@ const useStyles = makeStyles((theme) => ({
           fontSize: '1.1rem',
       },
   },
-  btn: {
+  button: {
       color: "white",
-      fontSize: '1rem',
-      fontFamily: "Roboto",
-      fontWeight: 300
+      background: `orange`,
+      fontSize: '1.5rem',
+      fontFamily: "Poppins",
+      fontWeight: 400,
+
 
   },
   icon: {
@@ -59,6 +63,7 @@ const useStyles = makeStyles((theme) => ({
   form: {
       paddingTop: '15vh',
       alignSelf: 'baseline',
+      border: `white`,
       maxWidth: 620,
       '@media (max-width:600px)': {
           width: 320,
@@ -73,18 +78,12 @@ const useStyles = makeStyles((theme) => ({
       },
   },
   input: {
-      color: "pink",
+      color: "pink"
       
       },
-
-  button: {
-      marginTop: "1.5rem",
-      color: "#DBC8FF",
-      border: 'white'
-  },
   field: {
-      margin: "1.1rem 0rem",
-  },
+      margin: "1.1rem 0rem"
+  }
 
 }));
 
@@ -124,6 +123,8 @@ const useStyles = makeStyles((theme) => ({
   <Grid container justify="center">
     <Box component="form" className={classes.form} onSubmit={sendEmail}>
       <Grid>
+
+    <Typography>Get in touch</Typography>
         <TextField
           className={classes.margin}
           id="name"
@@ -168,7 +169,7 @@ const useStyles = makeStyles((theme) => ({
           type="submit"
           className={classes.button}
         >
-          Submit
+          Let's connect!
         </Button>
       </Grid>
     </Box>

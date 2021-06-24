@@ -8,25 +8,31 @@ import Grid from '@material-ui/core/Grid';
 const useStyles = makeStyles(() => ({
     root: {
     backgroundColor: `purple`,
+    background: `fixed`,
     height: `100%`,
     width: `100vw`
 },
     view: {
         height: `100vh`,
+        width: `60vw`,
         marginTop: `5vh`,
         display: `flex`,
-        wrap: `wrap`
+        flexwrap: `wrap`,
+        flexDirection: `row`
 
     },
     heading: {
-        font:'Poppins',
-        fontSize: '1rem',
-        color: `black`,
-        marginTop: `10vh`
+        fontFamily:'Poppins',
+        fontSize: '3rem',
+        color: `white`,
+        marginTop: `10vh`,
+        justifyContent: `center`
     },
     card:
     {
-        margin: `15px`
+        margin: `15px`,
+        padding: `10px`,
+        width: `50px`
 }
 }));
 
@@ -37,10 +43,12 @@ const Portfolio = () => {
 
     return (
         <div className={classes.root}>
-            <Typography className={classes.heading} component="h1">Portfolio</Typography>
+            <Grid container justify="center">
+            <Typography className={classes.heading} >Portfolio</Typography></Grid>
 <Grid className={classes.view}>
             {allProjects.map(project => {
                     return (
+                        <Grid>
                             <PortfolioCard className={classes.card}
                                 image={project.image}
                                 title={project.title}
@@ -49,7 +57,7 @@ const Portfolio = () => {
                                 live={project.live}
                                 github={project.github}
                             />
-                        
+                        </Grid>
                     )
                 })}
 </Grid>

@@ -8,6 +8,7 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 
+import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles(() => ({
 
@@ -21,7 +22,9 @@ const useStyles = makeStyles(() => ({
         padding: '2rem',
     },
     active: {
-        color: '#67FCED'
+        color: '#67FCED',
+
+        fontFamily: 'Poppins',
       
     },
     listItem: {
@@ -34,6 +37,13 @@ const useStyles = makeStyles(() => ({
         fontFamily: 'Poppins',
         marginBottom: `2rem`
     },
+    railname: {
+        fontSize: `2rem`,
+        fontFamily: 'Poppins',
+        marginTop: `1rem`,
+        marginBottom: `1rem`,
+        color: `white`
+    }
 }));
 
 const Rail = ({ navigationLinks }) => {
@@ -41,6 +51,8 @@ const Rail = ({ navigationLinks }) => {
 
     return (
         <Box className={classes.menuRail} component="div">
+              <Divider />
+              <Typography className={classes.railname}>SARAH DURKIN</Typography>
             <Divider />
             <List>
                 {navigationLinks.map((item) => (
