@@ -12,9 +12,10 @@ import ListItemText from "@material-ui/core/ListItemText";
 const useStyles = makeStyles(() => ({
 
     menuRail: {
-        width: 240,
+        width: 400,
         textAlign: 'left',
-        font: 'Roboto',
+        fontFamily: 'Poppins',
+        weight: `800`,
         background: "purple",
         height: "100%",
         padding: '2rem',
@@ -28,6 +29,10 @@ const useStyles = makeStyles(() => ({
         "&:hover": {
             color: "#D4BFF9"
         },
+        marginTop: `2rem`,
+        fontSize: `3rem`,
+        fontFamily: 'Poppins',
+        marginBottom: `2rem`
     },
 }));
 

@@ -7,14 +7,44 @@ import SkillsFE from "../../utils/skillsFE";
 import SkillsBE from "../../utils/skillsBE";
 import resumePDF from '../../assets/resume/Resume.pdf';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
     root: {
-background: `purple`,
+        backgroundColor: `purple`,
+        backgroundAttachment: `fixed`,
+        width: `100vw`,
+        height: `100vh`,
+        fontFamily: `Poppins`
     },
 
-h2: { 
-    font: `Poppins`
-}
+heading: { 
+    paddingTop: `25vh`,
+    color: `pink`,
+    fontFamily: `Poppins`,
+    size: `5rem`,
+    justifyContent: `center`
+},
+skillbox: {
+   
+    marginTop: `15vh`,
+    marginBottom: `15vh`,
+
+    justifyContent: `center`
+},
+h2:
+{
+    color:  `pink`,
+    marginLeft: `3vh`,
+    marginRight: `3vh`,
+},
+resume: {
+      marginBottom: `15vh`},
+
+      button:
+      {
+          color:`orange`,
+          backgroundColor: `white`,
+        fontFamily: `Poppins`}
+    
 })
 )
 const Resume = () => {
@@ -22,13 +52,14 @@ const Resume = () => {
 
     return ( 
         <div className={classes.root}>
-           <Grid container justify="center" > 
+           <Grid className={classes.box} container justify="center" > 
+        
             <Typography className={classes.heading} >
                Sarah's Toolkit 
             </Typography> 
             </Grid>
             <Grid container
-                direction="row">
+                direction="row"  className={classes.skillbox}>
                         <Typography className={classes.h2} >
             Front End
             </Typography> 
@@ -36,16 +67,17 @@ const Resume = () => {
             </Grid>
 
             <Grid container
-                direction="row">
+                direction="row" className={classes.skillbox}>
                         <Typography className={classes.h2} >
             Back End
             </Typography> 
                 {SkillsBE.skills}
             </Grid>
-            <Grid container justify="center" > 
-            <Button target="_blank" href={resumePDF}> 
+            <Grid container justify="center" className={classes.resume} > 
+            <Button className={classes.button} target="_blank" href={resumePDF}> 
                   Download Resumé 
                 </Button>
+        
                 </Grid>
                
         </div>

@@ -1,4 +1,4 @@
-const Work= {
+const Work = {
 
     project:[
     {
@@ -6,13 +6,13 @@ const Work= {
         title: `THE POKÉMON DRAFT`,
         image: `https://res.cloudinary.com/www-actionnetwork-com/image/upload/v1624367456/pokemon-fullstack_enra4s.png`,
         detail: `A simple game to build a Pokémon team of six based on available stats, similar to Fantasy Football.`,
-        lang: `Node.js / Express.js / MySQL2 / Sequelize / Handlebars`,
+        lang: `Node.js, Express.js,MySQL2,Sequelize,Handlebars`,
         live: `https://pokemon-fullstack.herokuapp.com/`,
         github: `https://github.com/sarahdurks/fullstack-pokemon-game`,
       
     },
 
-    {
+    {id: `2`,
         title: `BUDGET PWA`,
         image: `https://res.cloudinary.com/www-actionnetwork-com/image/upload/v1624367456/budget-pwa_auqalo.png`,
         detail: `A PWA Budgeting app with online/offline capabilities.`,
@@ -22,7 +22,7 @@ const Work= {
       
     },
 
-    {
+    {id: `3`,
         title: `POKEMON GAME`,
         image: `https://res.cloudinary.com/www-actionnetwork-com/image/upload/v1624367457/pokemon-one_ntbza4.png`,
         detail: `A simple JS game using the PokeAPI`,
@@ -31,7 +31,7 @@ const Work= {
         github: `https://github.com/sarahdurks/Pokemon-Bootcamp-Battle`,
       
     },
-    {
+    {id: `4`,
         title: `SCHEDULER`,
         image: `
         https://res.cloudinary.com/www-actionnetwork-com/image/upload/v1624367456/scheduler_dcgb5y.png`,
@@ -42,7 +42,7 @@ const Work= {
       
     },
   
-    {
+    {id: `5`,
         title: `NOTE TAKER`,
         image: `    https://res.cloudinary.com/www-actionnetwork-com/image/upload/v1624367456/notes_druqku.png`,
         detail: `A note-taking app using Express and CRUD operations.`,
@@ -52,7 +52,7 @@ const Work= {
        
     },
 
-    {
+    {id: `6`,
         title: `WEATHER DASHBOARD`,
         image: `https://res.cloudinary.com/www-actionnetwork-com/image/upload/v1624367456/weather_qvzc6q.png`,
         detail: `Features dynamically updated HTML & CSS using OpenWeather API data.`,

@@ -18,8 +18,10 @@ const useStyles = makeStyles((theme) => ({
 
     box: {
         width: '80vw',
-        margin: `10vw`,
-        paddingTop: `10vh`
+        heigt: `100vh`,
+        justifyContent: `center`
+
+        
     },
     h1: {
         fontFamily: `Poppins`,
@@ -31,7 +33,8 @@ const useStyles = makeStyles((theme) => ({
         font: `Roboto`,
         color: `white`,
         textAlign: `center`,
-        fontsize: `.8rem`
+        fontsize: `.8rem`,
+        marginTop: `10vw`
     },
     avatar: {
         width: `20rem`,

@@ -8,20 +8,26 @@ import Grid from '@material-ui/core/Grid';
 const useStyles = makeStyles(() => ({
     root: {
     backgroundColor: `purple`,
-    backgroundAttachment: `fixed`,
     height: `100%`,
     width: `100vw`
 },
     view: {
-        height: `80vh`,
-        
+        height: `100vh`,
+        marginTop: `5vh`,
+        display: `flex`,
+        wrap: `wrap`
 
     },
     heading: {
         font:'Poppins',
         fontSize: '1rem',
-        color: `black`
-    }
+        color: `black`,
+        marginTop: `10vh`
+    },
+    card:
+    {
+        margin: `15px`
+}
 }));
 
 
@@ -35,8 +41,8 @@ const Portfolio = () => {
 <Grid className={classes.view}>
             {allProjects.map(project => {
                     return (
-                            <PortfolioCard
-                                image={Work.project.image}
+                            <PortfolioCard className={classes.card}
+                                image={project.image}
                                 title={project.title}
                                 description={project.detail}
                                 lang={project.lang}
