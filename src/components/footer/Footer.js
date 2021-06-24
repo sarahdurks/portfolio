@@ -11,15 +11,17 @@ const useStyles = makeStyles(() => ({
   footer: {
     display: 'flex',
     position: "fixed",
+    alignContent: `center`,
     zindex: '1',
     bottom: '0',
+    color: `#4A154B`,
     '@media (max-width:600px)': {
       fontSize: '.8rem',
     },
   },
   icons: {
-    color: "#B99BC9",
-    fontSize: '2rem',
+    color: "#CE375C",
+    fontSize: '1.5rem',
     fontWeight: '500',
     fontFamily: 'Poppins'
   },

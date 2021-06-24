@@ -31,14 +31,14 @@ const useStyles = makeStyles(() => ({
     },
 }));
 
-const Rail = ({ navItems }) => {
+const Rail = ({ navigationLinks }) => {
     const classes = useStyles();
 
     return (
         <Box className={classes.menuRail} component="div">
             <Divider />
             <List>
-                {navItems.map((item) => (
+                {navigationLinks.map((item) => (
                     <ListItem
                         key={item.listText}
                         className={document.location.pathname === item.listPath ? classes.active : classes.listItem}

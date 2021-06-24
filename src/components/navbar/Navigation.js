@@ -13,11 +13,14 @@ import BackspaceIcon from '@material-ui/icons/Backspace';
 
 const useStyles = makeStyles(() => ({
     topNav: {
-        background: "purple",
+        background: "#4A154B",
         margin: 0,
+        position: `fixed`,
         width: '100%',
         height: "5vh",
-        padding: '1rem'
+        padding: '1rem',
+        zindex: '1',
+        top: '0',
     }
 }));
 const Navigation = () => {

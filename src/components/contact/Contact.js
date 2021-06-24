@@ -14,8 +14,8 @@ import Button from '@material-ui/core/Button';
 const useStyles = makeStyles((theme) => ({
   contactContainer: {
       display: 'flex',
-      background: "black",
       height: "100vh",
+      background: '#4A154B',
       justifyContent: "center",
   },
   heading: {
@@ -61,13 +61,13 @@ const useStyles = makeStyles((theme) => ({
       alignSelf: 'baseline',
       maxWidth: 620,
       '@media (max-width:600px)': {
-          width: 300,
-          marginTop: '2.5rem',
+          width: 320,
+          marginTop: '30vh',
           padding: 4,
       },
 
       '@media (min-width:600px)': {
-          paddingTop: '15vh',
+          paddingTop: '20vh',
           position: "absolute",
           maxWidth: 650,
       },

@@ -2,6 +2,7 @@ const Work= {
 
     project:[
     {
+        id: `1`,
         title: `THE POKÉMON DRAFT`,
         image: `https://res.cloudinary.com/www-actionnetwork-com/image/upload/v1624367456/pokemon-fullstack_enra4s.png`,
         detail: `A simple game to build a Pokémon team of six based on available stats, similar to Fantasy Football.`,

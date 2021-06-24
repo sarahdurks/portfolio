@@ -11,7 +11,7 @@ import TextInfoContent from '@mui-treasury/components/content/textInfo';
 import { useFourThreeCardMediaStyles } from '@mui-treasury/styles/cardMedia/fourThree';
 import { useN04TextInfoContentStyles } from '@mui-treasury/styles/textInfoContent/n04';
 import { useOverShadowStyles } from '@mui-treasury/styles/shadow/over';
-import Portfolio from '../../utils/work';
+import Work from '../../utils/work';
 import { GitHub, Language } from '@material-ui/icons';
 import Grid from '@material-ui/core/Grid';
 
@@ -21,6 +21,8 @@ const useStyles = makeStyles(() => ({
     margin: 'auto',
     borderRadius: 12,
     padding: 12,
+    fontFamily: `Poppins`,
+    color: `black`
   },
   media: {
     borderRadius: 6,
@@ -41,21 +43,21 @@ const PortfolioCard = React.memo(function MusicCard() {
       <CardMedia
         className={cx(styles.media, mediaStyles.root)}
         image={
-          Portfolio.image}
+          Work.image}
         
       />
       <CardContent>
         <TextInfoContent
           classes={textCardContentStyles}
-          overline={Portfolio.builtwith}
-          heading={Portfolio.title}
-          body={Portfolio.description}
+          overline={Work.lang}
+          heading={Work.title}
+          body={Work.details}
         />
 
       </CardContent>
       <Grid>
       <Button 
-              href={Portfolio.github}
+              href={Work.github}
               target="_blank"
               className={styles.icons}>
             
@@ -63,7 +65,7 @@ const PortfolioCard = React.memo(function MusicCard() {
          
           </Button>
           <Button 
-              href={Portfolio.deployed}
+              href={Work.live}
               target="_blank"
               className={styles.icons}>
               <Language className={styles.icons} />

@@ -9,34 +9,37 @@ import about from "../../utils/about";
 const useStyles = makeStyles((theme) => ({
 
     root: {
-        background: 'black',
-        width: '100%',
+        background: '#4A154B',
+        width: '100vw',
         height: '100vh',
         justifyContent: `center`,
-        font: `Poppins`,
+
     },
 
     box: {
         width: '80vw',
-        margin: `10vw`
+        margin: `10vw`,
+        paddingTop: `10vh`
     },
     h1: {
-        font: `Poppins`,
-        color: `#B99BC9`,
-        fontsize: `5rem`
+        fontFamily: `Poppins`,
+        color: `#5bb381`,
+        size: `10rem`,
+        weight: 900
     },
     text: {
         font: `Roboto`,
         color: `white`,
-        fontsize: `1rem`
+        textAlign: `center`,
+        fontsize: `.8rem`
     },
     avatar: {
-        width: theme.spacing(50),
-        height: theme.spacing(50),
-        margin: theme.spacing(2),
+        width: `20rem`,
+        height: `20rem`,
+        margintop: `10px`,
         '@media (max-width:600px)': {
-            width: theme.spacing(20),
-        height: theme.spacing(20)
+        width: `60vw`,
+        height: `30vh`
         },
     }
 
@@ -48,11 +51,9 @@ const Home = () => {
 
     return (
         <div className={home.root}>
-
-
             <Grid container justify="center" className={home.box}>
             <Grid container justify="center">
-            <Typography className={home.h1}>
+            <Typography className={home.h1} component="h1">
                     {about.name}
                 </Typography>
                 </Grid> 

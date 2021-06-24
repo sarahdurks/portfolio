@@ -8,7 +8,8 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles(() => ({
     heading: {
         font:'Poppins',
-        fontSize: '1rem'
+        fontSize: '1rem',
+        color: `black`
     }
 }));
 
