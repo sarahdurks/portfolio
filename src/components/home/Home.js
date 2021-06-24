@@ -9,7 +9,8 @@ import about from "../../utils/about";
 const useStyles = makeStyles((theme) => ({
 
     root: {
-        background: '#4A154B',
+        background: 'white',
+        backgroundAttachment: `fixed`
        
 
     },
@@ -21,8 +22,11 @@ const useStyles = makeStyles((theme) => ({
         marginLeft: `2rem`,
         marginRight: `2rem`,
         justifyContent: `center`,
-        display: `flex`
-
+        display: `flex`,
+        '@media  (max-width:600px)': {
+            flexdirection: `column`,
+            flexwrap: `wrap`
+             }
         
     },
     nameclass: { marginTop: `10vh`,
@@ -34,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
     text: {
         font: `Poppins`,
         marginTop: `1vh`,
-        color: `white`,
+        color: `black`,
         textAlign: `center`,
         fontsize: `.8rem`,
         maxWidth: `60vw`

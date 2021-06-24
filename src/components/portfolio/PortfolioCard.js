@@ -26,6 +26,10 @@ const useStyles = makeStyles(() => ({
     color: `pink`
   
   },
+  body:
+  {
+    color: `black`
+  },
   media: {
     borderRadius: 6,
    
@@ -46,7 +50,7 @@ const useStyles = makeStyles(() => ({
   }
 }));
 //
-const PortfolioCard =({ image, title, details, lang, live, github }) => {
+const PortfolioCard =({ image, title, detail, lang, live, github }) => {
   const styles = useStyles();
   const mediaStyles = useFourThreeCardMediaStyles();
   const textCardContentStyles = useN04TextInfoContentStyles();
@@ -63,7 +67,7 @@ const PortfolioCard =({ image, title, details, lang, live, github }) => {
           classes={textCardContentStyles}
           overline={lang}
           heading={title}
-          body={details}
+          body={detail}
         />
 
       </CardContent>

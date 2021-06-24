@@ -27,6 +27,10 @@ const useStyles = makeStyles(() => ({
         fontFamily: `Poppins`,
         zindex: '1',
         top: '0',
+        '@media (max-width:600px)': {
+            width: `100vw`,
+            position: `fixed`}
+
     },
     opener: {
         fontSize: `3.5rem`,

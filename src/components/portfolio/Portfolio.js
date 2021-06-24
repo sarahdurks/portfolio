@@ -7,17 +7,22 @@ import Grid from '@material-ui/core/Grid';
 import HorizontalScroller from 'react-horizontal-scroll-container';
 const useStyles = makeStyles(() => ({
     root: {
-    background: `fixed`,
-    height: `100%`,
-    width: `100vw`
+        background: `fixed`
 },
     view: {
-        height: `80vh`,
-        width: `80vw`,
+       
+
+        height: `100vh`,
+        width: `100vw`,
+        background: `fixed`,
+        overflowx: `hidden`,
         marginTop: `5vh`,
         display: `flex`,
-        flexwrap: `wrap`,
-        flexDirection: `row`
+        '@media (max-width:600px)': {
+            width: `100vw`,
+            position: `fixed`}
+
+
 
     },
     heading: {
@@ -29,9 +34,10 @@ const useStyles = makeStyles(() => ({
     },
     card:
     {
-        margin: `15px`,
+        margin: `10px`,
         padding: `10px`,
-        width: `50px`
+        width: `50px`,
+        height: `100px`
 }
 }));
 
@@ -43,7 +49,7 @@ const Portfolio = () => {
     return (
         <div className={classes.root}>
             <Grid container justify="center">
-            <Typography className={classes.heading} >Portfolio</Typography></Grid>
+            <Typography className={classes.heading} >PORTFOLIO</Typography></Grid>
 <Grid className={classes.view}>
             {allProjects.map(project => {
                     return (
@@ -53,8 +59,8 @@ const Portfolio = () => {
                              key={project.id}
                                 image={project.image}
                                 title={project.title}
-                                description={project.detail}
                                 lang={project.lang}
+                                body={project.detail}
                                 live={project.live}
                                 github={project.github}
                             />

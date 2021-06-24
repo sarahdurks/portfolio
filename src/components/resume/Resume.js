@@ -9,7 +9,7 @@ import resumePDF from '../../assets/resume/Resume.pdf';
 
 const useStyles = makeStyles(() => ({
     root: {
-        backgroundColor: `purple`,
+
         backgroundAttachment: `fixed`,
         width: `100vw`,
         height: `100vh`,
@@ -17,25 +17,28 @@ const useStyles = makeStyles(() => ({
     },
 
 heading: { 
-    paddingTop: `25vh`,
-    color: `pink`,
+    paddingTop: `10vh`,
+    color: `black`,
     fontFamily: `Poppins`,
-    size: `5rem`,
+    fontSize: `2rem`,
+    justifyContent: `center`
+},
+skills: {
     justifyContent: `center`
 },
 skillbox: {
    
     marginTop: `15vh`,
     marginBottom: `15vh`,
-    marginRight: `5vw`,
-    marginLeft: `5vw`,
+
     justifyContent: `center`
 },
 h2:
 {
     color:  `pink`,
-    marginLeft: `3vh`,
-    marginRight: `3vh`,
+
+    fontFamily: `Poppins`,
+    fontSize: `1.5rem`,
 },
 resume: {
       marginBottom: `15vh`},
@@ -59,19 +62,19 @@ const Resume = () => {
                Sarah's Toolkit 
             </Typography> 
             </Grid>
-            <Grid container
-                direction="row"  className={classes.skillbox}>
+            <Grid container justify="center"
+            className={classes.skillbox}>
                         <Typography className={classes.h2} >
             Front End
-            </Typography> 
+            </Typography> </Grid><Grid container  justify="center">
                 {SkillsFE.skills}
             </Grid>
 
-            <Grid container
-                direction="row" className={classes.skillbox}>
+            <Grid container justify="center"
+              className={classes.skillbox}>
                         <Typography className={classes.h2} >
             Back End
-            </Typography> 
+            </Typography> </Grid><Grid container justify="center">
                 {SkillsBE.skills}
             </Grid>
             <Grid container justify="center" className={classes.resume} > 
