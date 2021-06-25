@@ -15,8 +15,8 @@ const useStyles = makeStyles((theme) => ({
 
   contact: {
       display: 'flex',
-      height: "100vh",
-
+      height: "90vh",
+marginBottom: `5vh`,
       justifyContent: "center",
   },
   heading: {

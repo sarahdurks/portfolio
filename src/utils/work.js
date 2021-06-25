@@ -5,8 +5,7 @@ const Work = {
         id: `1`,
         title: `POKÉ DRAFT`,
         image: `https://res.cloudinary.com/www-actionnetwork-com/image/upload/v1624367456/pokemon-fullstack_enra4s.png`,
-        detail: `A simple game to build a Pokémon team of six based on available stats, similar to Fantasy Football.`,
-        lang: `Node.js, Express.js, Sequelize, Handlebars`,
+        lang: `Node.js, Express.js, Sequelize, Handlebars. A simple game to build a Pokémon team.`,
         live: `https://pokemon-fullstack.herokuapp.com/`,
         github: `https://github.com/sarahdurks/fullstack-pokemon-game`,
       
@@ -14,9 +13,8 @@ const Work = {
 
     {id: `2`,
         title: `BUDGET PWA`,
-        image: `https://res.cloudinary.com/www-actionnetwork-com/image/upload/v1624367456/budget-pwa_auqalo.png`,
-        detail: `A PWA Budgeting app with online/offline capabilities.`,
-        lang: `MongoDB, Express, Mongoose`,
+        image: `https://res.cloudinary.com/www-actionnetwork-com/image/upload/v1624578198/Screen_Shot_2021-06-24_at_4.40.17_PM_zkmhxm.png`,
+        lang: `MongoDB, Express, Mongoose. A PWA Budgeting app with online/offline capabilities. `,
         live: `https://glacial-mesa-68320.herokuapp.com/`,
         github: `https://github.com/sarahdurks/budget-repo2`,
       
@@ -24,9 +22,8 @@ const Work = {
 
     {id: `3`,
         title: `POKEMON GAME`,
-        image: `https://res.cloudinary.com/www-actionnetwork-com/image/upload/v1624367457/pokemon-one_ntbza4.png`,
-        detail: `A simple JS game using the PokeAPI`,
-        lang: `HTML/CSS, JavaScript, PokeAPI`,
+        image: `https://res.cloudinary.com/www-actionnetwork-com/image/upload/v1624577921/Screen_Shot_2021-06-24_at_4.38.02_PM_seqwff.png`,
+        lang: `HTML/CSS, JavaScript, PokeAPI. A simple JS game using the PokeAPI`,
         live: `https://meganclo.github.io/Pokemon-Bootcamp-Battle/`,
         github: `https://github.com/sarahdurks/Pokemon-Bootcamp-Battle`,
       
@@ -34,8 +31,7 @@ const Work = {
     {id: `4`,
         title: `SCHEDULER`,
         image: `https://res.cloudinary.com/www-actionnetwork-com/image/upload/v1624367456/scheduler_dcgb5y.png`,
-        detail: `A calendar application that allows a user to save events for each hour of the day.`,
-        lang: `JavaScript, CSS, jQuery, Moment.js`,
+        lang: `JavaScript, CSS, jQuery, Moment.js. A calendar application for daily planning.`,
         live: `https://sarahdurks.github.io/work-scheduler/`,
         github: `https://github.com/sarahdurks/work-scheduler`,
       
@@ -44,8 +40,7 @@ const Work = {
     {id: `5`,
         title: `NOTE TAKER`,
         image: `    https://res.cloudinary.com/www-actionnetwork-com/image/upload/v1624367456/notes_druqku.png`,
-        detail: `A note-taking app using Express and CRUD operations.`,
-        lang: `JavaScript, Node, Express`,
+        lang: `JavaScript, Node, Express. Note-taking app using CRUD operations.`,
         live: `https://note-taker-sarah.herokuapp.com/`,
         github: `https://github.com/sarahdurks/express-js-notes`,
        
@@ -54,8 +49,7 @@ const Work = {
     {id: `6`,
         title: `WEATHER DASHBOARD`,
         image: `https://res.cloudinary.com/www-actionnetwork-com/image/upload/v1624367456/weather_qvzc6q.png`,
-        detail: `Features dynamically updated HTML & CSS using OpenWeather API data.`,
-        lang: ` HTML, Bootstrap,CSS, JavaScript`,
+        lang: ` HTML, Bootstrap,CSS, JavaScript. Dynamically dashboard using OpenWeather API.`,
         live: `https://sarahdurks.github.io/weather-new`,
         github: `https://github.com/sarahdurks/weather-new`,
        

@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     box: {
         width: '100vw',
         height: '100vh',
-       marginTop: `3rem`,
+       marginTop: `2rem`,
         marginLeft: `2rem`,
         marginRight: `2rem`,
         justifyContent: `center`,
@@ -36,8 +36,8 @@ const useStyles = makeStyles((theme) => ({
         weight: 900
     },
     text: {
-        font: `Poppins`,
-        marginTop: `1vh`,
+        fontFamily: `Poppins`,
+        marginTop: `.5vh`,
         color: `black`,
         textAlign: `center`,
         fontsize: `.8rem`,

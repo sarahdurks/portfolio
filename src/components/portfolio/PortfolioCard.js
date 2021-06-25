@@ -26,6 +26,7 @@ const useStyles = makeStyles(() => ({
     color: `pink`
   
   },
+
   body:
   {
     color: `black`
@@ -35,22 +36,21 @@ const useStyles = makeStyles(() => ({
    
   },
   icons: {
+    marginTop: '10px',
+    marginBottom: `0`,
+ 
     size: 1,
-    
-    
-
+    "&:hover": {
+      color: "pink"}
   },
-  buttoncard:
 
-  { justifyItems: `flexend`},
-    
   image:
   {
     height: `20px`
   }
 }));
 //
-const PortfolioCard =({ image, title, detail, lang, live, github }) => {
+const PortfolioCard =({ image, title,lang, live, github }) => {
   const styles = useStyles();
   const mediaStyles = useFourThreeCardMediaStyles();
   const textCardContentStyles = useN04TextInfoContentStyles();
@@ -67,11 +67,11 @@ const PortfolioCard =({ image, title, detail, lang, live, github }) => {
           classes={textCardContentStyles}
           overline={lang}
           heading={title}
-          body={detail}
+         
         />
 
       </CardContent>
-      <Grid className="buttoncard">
+      <Grid container justify="center" className="buttoncard">
       <Button 
               href={github}
               target="_blank"

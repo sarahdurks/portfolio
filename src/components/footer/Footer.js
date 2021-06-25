@@ -10,7 +10,9 @@ import contact from '../../utils/contact';
 const useStyles = makeStyles(() => ({
   footer: {
     display: 'flex',
+    width: `100vw`,
     position: "fixed",
+    background: `white`,
     alignContent: `center`,
     zindex: '1',
     bottom: '0',
@@ -20,10 +22,13 @@ const useStyles = makeStyles(() => ({
     },
   },
   icons: {
-    color: "#black",
+    color: "black",
     fontSize: '1.5rem',
     fontWeight: '500',
-    fontFamily: 'Poppins'
+    fontFamily: 'Poppins',
+    "&:hover": {
+      color: "pink"
+  },
   },
 
 }));

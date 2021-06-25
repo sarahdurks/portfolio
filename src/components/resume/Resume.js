@@ -15,9 +15,23 @@ const useStyles = makeStyles(() => ({
         height: `100vh`,
         fontFamily: `Poppins`
     },
+button: {
+    color: "white",
+    background: `orange`,
+    fontSize: '1.5rem',
+    margin: `2vh`,
+    fontFamily: "Poppins",
+    fontWeight: 400,
+    "&:hover": {
+        color: "pink"
+    },
+
+
+},
 
 heading: { 
     paddingTop: `10vh`,
+    marginBottom: `5vh`,
     color: `black`,
     fontFamily: `Poppins`,
     fontSize: `2rem`,
@@ -28,8 +42,8 @@ skills: {
 },
 skillbox: {
    
-    marginTop: `15vh`,
-    marginBottom: `15vh`,
+    marginTop: `5vh`,
+    marginBottom: `5vh`,
 
     justifyContent: `center`
 },
@@ -43,12 +57,7 @@ h2:
 resume: {
       marginBottom: `15vh`},
 
-      button:
-      {
-          color:`orange`,
-          backgroundColor: `white`,
-        fontFamily: `Poppins`}
-    
+
 })
 )
 const Resume = () => {
