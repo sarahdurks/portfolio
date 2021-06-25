@@ -23,7 +23,7 @@ const useStyles = makeStyles(() => ({
     borderRadius: 15,
     padding: 15,
     fontFamily: `Poppins`,
-    color: `pink`
+    color: `#5bb381`,
   
   },
 
@@ -33,15 +33,16 @@ const useStyles = makeStyles(() => ({
   },
   media: {
     borderRadius: 6,
+    fontFamily: `Poppins`,
    
   },
   icons: {
     marginTop: '10px',
     marginBottom: `0`,
- 
+    fontFamily: `Poppins`,
     size: 1,
     "&:hover": {
-      color: "pink"}
+      color: `#5bb381`}
   },
 
   image:

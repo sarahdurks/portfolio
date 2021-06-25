@@ -27,7 +27,7 @@ const useStyles = makeStyles(() => ({
     fontWeight: '500',
     fontFamily: 'Poppins',
     "&:hover": {
-      color: "pink"
+      color: `#5bb381`,
   },
   },
 
@@ -47,7 +47,7 @@ const Footer = () => {
 
         <Button
           href={contact.github}
-          target="_blank" // on Github
+          target="_blank"
           className={classes.icons}>
           <GitHub className={classes.icons} />
         </Button>

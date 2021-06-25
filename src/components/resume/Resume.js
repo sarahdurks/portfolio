@@ -23,20 +23,22 @@ button: {
     fontFamily: "Poppins",
     fontWeight: 400,
     "&:hover": {
-        color: "pink"
+        color: `#5bb381`,
     },
 
 
 },
 
-heading: { 
-    paddingTop: `10vh`,
-    marginBottom: `5vh`,
-    color: `black`,
-    fontFamily: `Poppins`,
-    fontSize: `2rem`,
-    justifyContent: `center`
+
+heading:
+{ marginTop: `15vh`,
+fontFamily: `Poppins`,
+color: `#5bb381`,
+fontSize: `2rem`,
+weight: 900,
+justifyContent: `center`
 },
+
 skills: {
     justifyContent: `center`
 },
@@ -49,7 +51,7 @@ skillbox: {
 },
 h2:
 {
-    color:  `pink`,
+    color: `#5bb381`,
 
     fontFamily: `Poppins`,
     fontSize: `1.5rem`,
@@ -87,7 +89,7 @@ const Resume = () => {
                 {SkillsBE.skills}
             </Grid>
             <Grid container justify="center" className={classes.resume} > 
-            <Button className={classes.button} target="_blank" href={resumePDF}> 
+            <Button className={classes.button}  variant="outlined"  target="_blank" href={resumePDF}> 
                   Download Resumé 
                 </Button>
         

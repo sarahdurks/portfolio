@@ -23,7 +23,7 @@ const Work = {
     {id: `3`,
         title: `POKEMON GAME`,
         image: `https://res.cloudinary.com/www-actionnetwork-com/image/upload/v1624577921/Screen_Shot_2021-06-24_at_4.38.02_PM_seqwff.png`,
-        lang: `HTML/CSS, JavaScript, PokeAPI. A simple JS game using the PokeAPI`,
+        lang: `HTML/CSS, JavaScript, PokeAPI. A simple JS game using the PokeAPI.`,
         live: `https://meganclo.github.io/Pokemon-Bootcamp-Battle/`,
         github: `https://github.com/sarahdurks/Pokemon-Bootcamp-Battle`,
       

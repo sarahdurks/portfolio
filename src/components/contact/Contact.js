@@ -11,26 +11,26 @@ import Message from './Message';
 import Box from "@material-ui/core/Box";
 import Button from '@material-ui/core/Button';
 import Typography from "@material-ui/core/Typography";
+import AlternateEmailIcon from '@material-ui/icons/AlternateEmail';
 const useStyles = makeStyles((theme) => ({
 
   contact: {
       display: 'flex',
       height: "90vh",
-marginBottom: `5vh`,
+      marginBottom: `5vh`,
       justifyContent: "center",
   },
-  heading: {
-  marginTop: '15vh',
-      color: "white",
-      fontFamily: "Poppins",
-      fontWeight: 600,
-      textAlign: "center",
-      marginBottom: "1rem",
-      fontSize: '1.8rem',
-      '@media (max-width:600px)': {
-          fontSize: '1.3rem',
-      },
-  },
+
+  head:
+    { marginTop: `15vh`,
+    fontFamily: `Poppins`,
+    color: `#5bb381`,
+    fontSize: `2rem`,
+    weight: 900,
+    justifyContent: `center`
+},
+
+
   heading2: {
       color: `white`,
       textAlign: "center",
@@ -51,6 +51,9 @@ marginBottom: `5vh`,
       margin: `2vh`,
       fontFamily: "Poppins",
       fontWeight: 400,
+      "&:hover": {
+        color: `#5bb381`
+    },
 
 
   },
@@ -96,20 +99,13 @@ marginBottom: `5vh`,
   margin: {
     color: `white`,
     marginBottom: `2rem`,
+    fontFamily: `Poppins`
   },
   formtext: 
   {
     color: `black`,
     fontFamily: `Poppins`,
-  },
-  head: 
-  {
-    color: `black`,
-    fontFamily: `Poppins`,
-    fontWeight: `900`,
-    fontSize: `2rem`
   }
-
 }));
 
     const Contact = () => {
@@ -171,7 +167,7 @@ marginBottom: `5vh`,
           InputProps={{
             startAdornment: (
               <InputAdornment  position="start">
-                <AccountCircle className={classes.icon}/>
+                <AlternateEmailIcon  className={classes.icon}/>
               </InputAdornment>
             ),
           }}

@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     box: {
         width: '100vw',
         height: '100vh',
-       marginTop: `2rem`,
+        marginTop: `2rem`,
         marginLeft: `2rem`,
         marginRight: `2rem`,
         justifyContent: `center`,
@@ -45,8 +45,10 @@ const useStyles = makeStyles((theme) => ({
        
     },
     avatar: {
-        width: `20rem`,
-        height: `20rem`,
+        width: theme.spacing(15),
+    height: theme.spacing(15),
+    border: `2px`,
+    borderColor:  `#5bb381`,
         margintop: `5px`,
         '@media (max-width:600px)': {
         width: `10rem`,
@@ -68,7 +70,9 @@ const Home = () => {
                     {about.name}
                 </Typography>
                 </Grid> 
-   
+                <Grid container justify="center">
+            <Avatar className={home.avatar} src='https://res.cloudinary.com/www-actionnetwork-com/image/upload/v1623987783/77648727_yfozng.jpg' alt="Sarah headshot" />
+            </Grid>
                 <Grid container justify="center">
             <Typography className={home.text}>
                     {about.intro}
@@ -76,9 +80,7 @@ const Home = () => {
                 </Grid> 
                 <Grid container justify="center">
                 <Typography className={home.text}>       {about.bio}     </Typography>
-                <Grid container justify="center">
-            <Avatar className={home.avatar} src='https://res.cloudinary.com/www-actionnetwork-com/image/upload/v1623987783/77648727_yfozng.jpg' alt="Sarah headshot" />
-            </Grid>
+               
                 </Grid>
              </Grid>
 

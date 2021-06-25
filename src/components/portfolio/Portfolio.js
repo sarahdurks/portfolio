@@ -17,7 +17,7 @@ const useStyles = makeStyles(() => ({
         width: `100vw`,
         background: `fixed`,
         overflowx: `hidden`,
-        marginTop: `5vh`,
+        marginTop: `10vh`,
         marginBottom: `5vh`,
         display: `flex`,
         '@media (max-width:600px)': {
@@ -27,13 +27,16 @@ const useStyles = makeStyles(() => ({
 
 
     },
-    heading: {
-        fontFamily:'Poppins',
-        fontSize: '3rem',
-        color: `black`,
-        marginTop: `10vh`,
+    heading:{ marginTop: `15vh`,
+        fontFamily: `Poppins`,
+        color: `#5bb381`,
+        fontSize: `2rem`,
+        weight: 900,
         justifyContent: `center`
     },
+
+
+
     fixedheader: {
         width: `100vw`,
         position: `fixed`,
