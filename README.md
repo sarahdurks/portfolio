@@ -1,4 +1,3 @@
-![Frame 53463](https://user-images.githubusercontent.com/77648727/122691237-580d9a80-d1e3-11eb-9024-cb76ca337a54.png)
 
  A portfolio built with React and Material UI to showcase work completed during UCB's coding bootcamp.
 
