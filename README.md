@@ -46,6 +46,8 @@
 #### From Assignment
 ![image](https://user-images.githubusercontent.com/77648727/121286190-544d5000-c894-11eb-9e44-badca49667bc.png)
 
+#### Execution
+<img width="1440" alt="Screen Shot 2021-06-24 at 8 13 52 PM" src="https://user-images.githubusercontent.com/77648727/123364178-d4c4af80-d528-11eb-80de-527cbf9581ca.png">
 
  
 ### Resources 🤝
