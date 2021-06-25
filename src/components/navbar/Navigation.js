@@ -28,8 +28,11 @@ const useStyles = makeStyles(() => ({
         zindex: '1',
         top: '0',
         '@media (max-width:600px)': {
-            width: `100vw`,
-            position: `fixed`}
+            width: `100%`,
+            position: `fixed`,
+            margin: 0,
+            top: '0'
+        }
 
     },
     opener: {

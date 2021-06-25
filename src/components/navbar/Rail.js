@@ -13,7 +13,7 @@ import Grid from "@material-ui/core/Grid";
 const useStyles = makeStyles(() => ({
 
     menuRail: {
-        width: 400,
+        width: 240,
         textAlign: 'left',
         fontFamily: 'Poppins',
         weight: `800`,

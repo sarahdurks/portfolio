@@ -17,14 +17,19 @@ import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles(() => ({
   root: {
-    width: 300,
-    height: 500,
-    margin: '2rem',
+    width: `40%`,
+    height: `10`,
+    margin: 'auto',
+    marginTop: `1rem`,
+    marginBottom: `3rem`,
     borderRadius: 15,
     padding: 15,
     fontFamily: `Poppins`,
     color: `#5bb381`,
+    '@media (max-width:600px)': {
+      width: `90%`
   
+    }
   },
 
   body:

@@ -12,6 +12,8 @@ const useStyles = makeStyles(() => ({
     display: 'flex',
     width: `100vw`,
     position: "fixed",
+    paddingTop: `1rem`,
+    marginTop: `2rem`,
     background: `white`,
     alignContent: `center`,
     zindex: '1',

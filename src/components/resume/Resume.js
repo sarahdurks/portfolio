@@ -11,8 +11,9 @@ const useStyles = makeStyles(() => ({
     root: {
 
         backgroundAttachment: `fixed`,
-        width: `100vw`,
+        width: `90%`,
         height: `100vh`,
+        justifyContent: `center`,
         fontFamily: `Poppins`
     },
 button: {
@@ -40,18 +41,20 @@ justifyContent: `center`
 },
 
 skills: {
-    justifyContent: `center`
+    justifyContent: `center`,
+    marginLeft: `5vw`,
+    marginRight: `5vw`,
 },
 skillbox: {
-   
-    marginTop: `5vh`,
-    marginBottom: `5vh`,
 
     justifyContent: `center`
 },
 h2:
 {
     color: `#5bb381`,
+    marginTop: `2vh`,
+    marginBottom: `2vh`,
+    alignContent: `center`,
 
     fontFamily: `Poppins`,
     fontSize: `1.5rem`,

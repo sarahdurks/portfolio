@@ -10,19 +10,19 @@ const useStyles = makeStyles((theme) => ({
 
     root: {
         background: 'white',
-        backgroundAttachment: `fixed`
+        backgroundAttachment: `fixed`,
+        width: '100vw',
+        height: '100vh',
        
 
     },
 
     box: {
-        width: '100vw',
-        height: '100vh',
+        width: `90vw`,
         marginTop: `2rem`,
         marginLeft: `2rem`,
         marginRight: `2rem`,
         justifyContent: `center`,
-        display: `flex`,
         '@media  (max-width:600px)': {
             flexdirection: `column`,
             flexwrap: `wrap`
@@ -48,7 +48,8 @@ const useStyles = makeStyles((theme) => ({
         width: theme.spacing(15),
     height: theme.spacing(15),
     border: `2px`,
-    borderColor:  `#5bb381`,
+    marginBottom: `5px`,
+
         margintop: `5px`,
         '@media (max-width:600px)': {
         width: `10rem`,

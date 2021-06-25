@@ -17,12 +17,12 @@ const useStyles = makeStyles((theme) => ({
   contact: {
       display: 'flex',
       height: "90vh",
-      marginBottom: `5vh`,
+      margin: `auto`,
       justifyContent: "center",
   },
 
   head:
-    { marginTop: `15vh`,
+    { marginTop: `10vh`,
     fontFamily: `Poppins`,
     color: `#5bb381`,
     fontSize: `2rem`,
@@ -41,6 +41,7 @@ const useStyles = makeStyles((theme) => ({
       fontFamily: "Poppins",
       marginBottom: "1rem",
       display: 'flex',
+      justifyContent: `center`,
       alignItems: "baseline",
       flexWrap: 'wrap'
   },
