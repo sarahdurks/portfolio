@@ -47,7 +47,7 @@ const Work = {
     },
 
     {id: `6`,
-        title: `WEATHER DASHBOARD`,
+        title: `WEATHER DASH`,
         image: `https://res.cloudinary.com/www-actionnetwork-com/image/upload/v1624367456/weather_qvzc6q.png`,
         lang: ` HTML, Bootstrap,CSS, JavaScript. Dynamically dashboard using OpenWeather API.`,
         live: `https://sarahdurks.github.io/weather-new`,
