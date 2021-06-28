@@ -1,7 +1,7 @@
 
  A portfolio built with React and Material UI to showcase work completed during UCB's coding bootcamp.
  
- upbeat-kepler-fd3722.netlify.app/
+https://www.upbeat-kepler-fd3722.netlify.app/
  
 
 ### Uses 🧰
