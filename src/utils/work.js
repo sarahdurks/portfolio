@@ -29,11 +29,11 @@ const Work = {
       
     },
     {id: `4`,
-        title: `SCHEDULER`,
-        image: `https://res.cloudinary.com/www-actionnetwork-com/image/upload/v1624367456/scheduler_dcgb5y.png`,
-        lang: `JavaScript, CSS, jQuery, Moment.js. A calendar application for daily planning.`,
+        title: `CAMPUS CONNECT`,
+        image: `https://res.cloudinary.com/actionfdfds/image/upload/v1625544451/Screen_Shot_2021-07-03_at_5.14.37_PM_1_onya2u.png`,
+        lang: `A react chat app using GraphQL, mongoDB.`,
         live: `https://sarahdurks.github.io/work-scheduler/`,
-        github: `https://github.com/sarahdurks/work-scheduler`,
+        github: `https://github.com/Clayto30/campus-connect`,
       
     },
   
