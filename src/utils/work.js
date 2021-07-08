@@ -32,7 +32,7 @@ const Work = {
         title: `CAMPUS CONNECT`,
         image: `https://res.cloudinary.com/actionfdfds/image/upload/v1625544451/Screen_Shot_2021-07-03_at_5.14.37_PM_1_onya2u.png`,
         lang: `A react chat app using GraphQL, mongoDB.`,
-        live: `https://sarahdurks.github.io/work-scheduler/`,
+        live: `https://campus-connect21.herokuapp.com/`,
         github: `https://github.com/Clayto30/campus-connect`,
       
     },
